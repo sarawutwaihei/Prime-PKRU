@@ -9,6 +9,48 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    //impricit
+    let strAlertHaveSpace  = "Please Fill Number"
+    
+    
+    
+    @IBOutlet weak var numberTextField: UITextField!
+    
+    
+    @IBOutlet weak var resultLabel: UILabel!
+    
+    
+    
+    @IBAction func checkButton(_ sender: Any) {
+        
+        
+        let strNumberFromTextField  = numberTextField.text!
+        print("Number ==> \(strNumberFromTextField)")
+        
+        
+        
+        if strNumberFromTextField != "" {
+            
+            print("No Space")
+            
+            
+        }else{
+            
+            print("Have Space")
+            
+            resultLabel.text = strAlertHaveSpace
+            
+        }
+        
+        
+        
+    } // CheckButton
+    
+    
+    
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()

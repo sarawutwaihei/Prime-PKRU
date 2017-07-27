@@ -41,9 +41,12 @@
                                     <constraint firstAttribute="width" constant="78" id="zKl-TW-LmJ"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <state key="normal" title="Button">
+                                <state key="normal" title="Check">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="checkButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tfP-XN-7bh"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Txh-9D-nh3">
                                 <rect key="frame" x="67" y="103" width="193" height="30"/>
@@ -94,6 +97,10 @@
                             <constraint firstAttribute="trailing" secondItem="Mv3-3z-2Gs" secondAttribute="trailing" id="zrb-qV-uso"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="numberTextField" destination="Txh-9D-nh3" id="cGy-Iu-o1G"/>
+                        <outlet property="resultLabel" destination="gTc-5a-cde" id="gBG-C6-MCh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
