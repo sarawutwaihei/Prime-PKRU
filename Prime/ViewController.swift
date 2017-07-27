@@ -12,7 +12,10 @@ class ViewController: UIViewController {
     
     //impricit
     let strAlertHaveSpace  = "Please Fill Number"
-    let strAlertNumberFalse = "กรุณากรอง ตัวอักษร"
+    let strAlertNumberFalse = "Please Fill Number Only"
+    let strAlertNotPrime = "Not Prime"
+    let strAlertBePrime = "is Prime"
+    
     
     
     
@@ -40,9 +43,43 @@ class ViewController: UIViewController {
             //Check Number or Artical
             if let intNumberFromTextField = Int (strNumberFromTextField) {
                 print("This is Number")
+                
+                //Check Prime
+                if intNumberFromTextField != 1 {
+                    // Not 1
+                    var intMyNumber = 2
+                    var bolPrime: Bool = true
+                    
+                    while intMyNumber < intNumberFromTextField  {
+                        
+                        if intNumberFromTextField % intMyNumber == 0 {
+                            bolPrime = false
+                            
+                        } // if
+                        
+                        intMyNumber += 1
+                    } //While
+                    
+                    
+                    if bolPrime {
+                        resultLabel.text = "\(intNumberFromTextField)" + strAlertBePrime
+                    } else{
+                        resultLabel.text = "\(intNumberFromTextField)" + strAlertNotPrime
+                    }
+                    
+                    
+                    
+                    
+                    
+                    
+                }else{
+                    resultLabel.text = "\(intNumberFromTextField)" + strAlertNotPrime
+                }
+                
+                
             }else{
                 print("This is Arical")
-                resultLabel.text = strAlertHaveSpace
+                resultLabel.text = strAlertNumberFalse
             }
             
             
