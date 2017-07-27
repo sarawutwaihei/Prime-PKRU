@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     
     //impricit
     let strAlertHaveSpace  = "Please Fill Number"
+    let strAlertNumberFalse = "กรุณากรอง ตัวอักษร"
+    
     
     
     
@@ -30,14 +32,24 @@ class ViewController: UIViewController {
         
         
         
+        //Check Space
         if strNumberFromTextField != "" {
             
             print("No Space")
+            
+            //Check Number or Artical
+            if let intNumberFromTextField = Int (strNumberFromTextField) {
+                print("This is Number")
+            }else{
+                print("This is Arical")
+                resultLabel.text = strAlertHaveSpace
+            }
             
             
         }else{
             
             print("Have Space")
+            
             
             resultLabel.text = strAlertHaveSpace
             
