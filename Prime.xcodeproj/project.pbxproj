@@ -13,6 +13,7 @@
 		2F22AB7A1F298F2000ABE895 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2F22AB791F298F2000ABE895 /* Assets.xcassets */; };
 		2F22AB7D1F298F2000ABE895 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2F22AB7B1F298F2000ABE895 /* LaunchScreen.storyboard */; };
 		2F22AB851F29920000ABE895 /* bg_prime.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2F22AB841F29920000ABE895 /* bg_prime.jpg */; };
+		2F22AB871F29A08A00ABE895 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2F22AB861F29A08A00ABE895 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2F22AB7C1F298F2000ABE895 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2F22AB7E1F298F2000ABE895 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2F22AB841F29920000ABE895 /* bg_prime.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg_prime.jpg; path = ../../../../Desktop/bg_prime.jpg; sourceTree = "<group>"; };
+		2F22AB861F29A08A00ABE895 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		2F22AB661F298F2000ABE895 = {
 			isa = PBXGroup;
 			children = (
+				2F22AB861F29A08A00ABE895 /* README.md */,
 				2F22AB711F298F2000ABE895 /* Prime */,
 				2F22AB701F298F2000ABE895 /* Products */,
 			);
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F22AB871F29A08A00ABE895 /* README.md in Sources */,
 				2F22AB751F298F2000ABE895 /* ViewController.swift in Sources */,
 				2F22AB731F298F2000ABE895 /* AppDelegate.swift in Sources */,
 			);
